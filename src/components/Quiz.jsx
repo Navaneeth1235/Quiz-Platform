@@ -17,8 +17,8 @@ const Quiz = () => {
     getAttempts().then(setAttempts);
   }, []);
 
-  const handleAnswer = (selectedOption) => {
-    const isCorrect = selectedOption === quizData[currentQuestion].correctAnswer;
+  const handleAnswer = (selectedAnswer) => {
+    const isCorrect = selectedAnswer === quizData[currentQuestion].correctAnswer;
     const newAnswers = [...answers, { questionId: currentQuestion + 1, isCorrect }];
     setAnswers(newAnswers);
 
