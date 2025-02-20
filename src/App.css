@@ -1,0 +1,138 @@
+.App {
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Quiz card */
+.quiz-container {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Question styling */
+.question {
+  margin-bottom: 1.5rem;
+}
+
+.question h2 {
+  font-size: 1.8rem;
+  color: #34495e;
+  margin-bottom: 1rem;
+}
+
+.options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.options button {
+  background: #ecf0f1;
+  border: none;
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #2c3e50;
+  cursor: pointer;
+}
+
+.options button:hover:not(:disabled) {
+  background: #3498db;
+  color: #fff;
+}
+
+.options button:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* Timer */
+.timer {
+  font-size: 1.2rem;
+  color: #e74c3c;
+  margin-bottom: 1rem;
+}
+
+/* Feedback */
+.feedback {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+/* Scoreboard */
+.scoreboard {
+  background: #fff;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.scoreboard h2 {
+  color: #27ae60;
+  margin-bottom: 1rem;
+}
+
+.scoreboard button {
+  background: #2ecc71;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.scoreboard button:hover {
+  background: #27ae60;
+}
+
+/* History */
+.history {
+  background: #fff;
+  border-radius: 15px;
+  padding: 1.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.history h3 {
+  color: #8e44ad;
+  margin-bottom: 1rem;
+}
+
+.history ul {
+  list-style: none;
+}
+
+.history li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #ecf0f1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .question h2 {
+    font-size: 1.4rem;
+  }
+
+  .options {
+    grid-template-columns: 1fr;
+  }
+
+  .quiz-container, .scoreboard, .history {
+    padding: 1rem;
+  }
+}

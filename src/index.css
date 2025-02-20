@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif; /* Modern, clean font */
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); /* Subtle gradient */
+  min-height: 100vh;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Responsive container */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Smooth transitions for all buttons */
+button {
+  transition: all 0.3s ease;
+}
